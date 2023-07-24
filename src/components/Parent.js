@@ -23,11 +23,14 @@ const Parent = () =>{
                     <Child />
                 ):(
                     <div>
-                         <label htmlFor = "userName">Username: </label>
-                        <input type = "text" value = {userName} onChange = {(event) => setUserName(event.target.value)} />
-                        <label htmlFor = "password">Password: </label>
-                        <input type = "password" value = {password} onChange={(event) => setPassword(event.target.value)} />
-                        <button onClick = {clickAction}>Login</button>
+                        <form>
+                            <label htmlFor = "userName">Username: </label>
+                            <input type = "text" value = {userName} onChange = {(event) => setUserName(event.target.value)} />
+                            <label htmlFor = "password">Password: </label>
+                            <input type = "password" value = {password} onChange={(event) => setPassword(event.target.value)} />
+                            <button onClick = {clickAction}>Login</button>
+                        </form>
+                        
                     </div>
                    
                 )
